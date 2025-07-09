@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP-Logs List</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 300px;
+        }
+        li {
+            padding: 10px;
+            border: 1px solid white;
+            margin: 5px 0;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>IP-Logs List</h1>
+    <ul id="ipList"></ul>
+    <a href="index.html">Back to Input</a>
+    <script src="script.js"></script>
+    <script>
+        displayList();
+    </script>
+</body>
+</html>
